@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Generator</title>
+    <link rel="shortcut icon" href="./images/quotation.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+<body>
+    <div class="quotes-container" id="quotes-conatiner">
+        <div class="q_text">
+            <i class="fa fa-quote-left" aria-hidden="true"></i>
+            <span id="quotes">Genius is one percent inspiration and ninety-nine percent perspiration</span>
+        </div>
+
+        <div class="quotes_author">
+            <span id="quotes_author">Thomas Edison</span>
+        </div>
+
+        <div class="new-quotes">
+            <button id="new-quotes" onclick="return getQuotes()">New Quotes</button>
+        </div>
+
+    </div>
+</body>
+<script src="./app.js"></script>
+</html>
