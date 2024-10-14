@@ -4,14 +4,15 @@ let new_quotes=document.getElementById("new-quotes");
 let apiQuotes=[];
 
 function setQuotes(){
-    const filteredQuotes = apiQuotes.filter(quote => quote.text.length <= 80);
-    const quote = filteredQuotes[Math.floor(Math.random() * filteredQuotes.length)];
+    const quote = apiQuotes[Math.floor(Math.random() * filteredQuotes.length)];
     quotes.innerHTML=quote.text;
     if(quote.author=="Anonymous"){
         quotes_author.innerHTML="Unknown"
     }else{
         quotes_author.innerHTML=quote.author;
     }
+    
+
 }   
 
 async function getQuotes() {
